@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "sugarpunch";
+    src: url("sugarpunch.otf") format("truetype");
+}
+
+body {
+    overflow-y: hidden;
+}
+
+.title {
+    font-family: "sugarpunch";
+    font-size: 40px;
+    color: black;
+}
+
+input {
+    text-transform: uppercase;
+    text-align: center;
+    width: 150px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    outline: none;
+    height: 2rem;
+}
+
+.grow-card {
+    width: 84px;
+    height: 83px;
+    perspective: 1000px;
+}
+
+.grow-card:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+​ input:focus {
+    border: none;
+}
+
+input:not([value=" "]) {
+    font-family: "sugarpunch";
+    font-size: 18px;
+}
+
+#quadro_maior {
+    margin: 0 auto;
+    width: 600px;
+    background-color: rgba(204, 204, 204, 0.4);
+    border: 2px solid rgba(212, 212, 212, 0.8);
+    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    box-shadow: 12px 12px 25px rgba(50, 50, 50, 0.77);
+    border-radius: 2em;
+}
+
+#palco_jogo {
+    margin-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+#palco_jogo>div {
+    display: inline-block;
+}
+
+.quadro {
+    width: 100px;
+    height: 100px;
+}
+
+.border_br {
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+}
+
+.border_b {
+    border-bottom: 4px solid black;
+}
+
+.border_r {
+    border-right: 4px solid black;
+}
+
+#s_apelido1,
+#s_apelido2 {
+    display: none;
+    text-transform: uppercase;
+    font-family: "sugarpunch";
+}

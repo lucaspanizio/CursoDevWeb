@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Jogo da Velha</title>
+    <script src="jquery-2.2.1.js"></script>
+    <script src="jogo.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div id="quadro_maior">
+        <table width="600px">
+            <tr>
+                <td colspan="3" align="center">
+                    <span class="title">JOGO DA VELHA</span>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <img src="imagens/jogador_1.png" alt="Jogador 1">
+                    <br>
+                    <input type="text" maxlength="10" id="i_apelido1" onkeyup="this.setAttribute('value', this.value);">
+                    <span id="s_apelido1"></span>
+                </td>
+                <td align="center">
+                    <div class="grow-card">
+                        <img src="imagens/iniciar.png" alt="Botão de Iniciar" id="btn_jogo">
+                    </div>
+                </td>
+                <td align="center">
+                    <img src="imagens/jogador_2.png" alt="Jogador 2">
+                    <br>
+                    <input type="text" maxlength="10" id="i_apelido2" onkeyup="this.setAttribute('value', this.value);">
+                    <span id="s_apelido2"></span>
+                </td>
+            </tr>
+        </table>
+
+        <div id="palco_jogo">
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="quadro border_br" id="A-1"></div>
+                        </td>
+                        <td>
+                            <div class="quadro border_br" id="A-2"></div>
+                        </td>
+                        <td>
+                            <div class="quadro border_b" id="A-3"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="quadro border_br" id="B-1"></div>
+                        </td>
+                        <td>
+                            <div class="quadro border_br" id="B-2"></div>
+                        </td>
+                        <td>
+                            <div class="quadro border_b" id="B-3"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="quadro border_r" id="C-1"></div>
+                        </td>
+                        <td>
+                            <div class="quadro border_r" id="C-2"></div>
+                        </td>
+                        <td>
+                            <div class="quadro" id="C-3"></div>
+                    </tr>
+                </table>
+            </div>
+
+
+</body>
+
+</html>
